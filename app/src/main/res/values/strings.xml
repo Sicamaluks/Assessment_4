@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Assessment_4</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="empty_contact_list">Your contacts list is empty</string>
+    <string name="add_account">Add Account</string>
+    <string name="import_contact">Import</string>
+    <string name="add_contact">add_contact</string>
+    <string name="contact_list_image">contact_list_image</string>
+    <string name="add_photo">add photo</string>
+    <string name="add_phone">add phone</string>
+    <string name="add_email">add email</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Lastname</string>
+    <string name="company">Company</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="default_ringtone">Default</string>
+    <string name="text_tone">Text Tone</string>
+    <string name="arrow">arrow</string>
+    <string name="save">save</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_contact">share contact</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_app_adUnitId">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

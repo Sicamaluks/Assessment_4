@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/contactsFragment">
+
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="co.za.fat.assessment_4.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="co.za.fat.assessment_4.ContactsFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contactsFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="co.za.fat.assessment_4.AddContactFragment"
+        android:label="Add New Contact" >
+        <action
+            android:id="@+id/action_addContactFragment_to_contactListFragment"
+            app:destination="@id/contactListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactListFragment"
+        android:name="co.za.fat.assessment_4.ContactListFragment"
+        android:label="Contact List"
+        tools:layout="@layout/fragment_contact_list" >
+        <action
+            android:id="@+id/action_contactListFragment_to_contactDetailsFragment"
+            app:destination="@id/contactDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactDetailsFragment"
+        android:name="co.za.fat.assessment_4.ContactDetailsFragment"
+        android:label="Contact Details"
+        tools:layout="@layout/fragment_contact_details" />
+</navigation>

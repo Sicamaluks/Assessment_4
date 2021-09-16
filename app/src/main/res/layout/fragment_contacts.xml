@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsFragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/contact_list_image"
+                tools:src="@mipmap/contact_phone_24_round" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:text="@string/empty_contact_list"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#00546B"
+            android:text="@string/add_account" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/import_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:textColor="#00546B"
+            android:text="@string/import_contact" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_contact"
+            android:layout_width="60dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/person_add_24"
+            android:visibility="visible"
+            android:contentDescription="@string/add_contact"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>
